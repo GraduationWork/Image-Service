@@ -1,0 +1,1 @@
+call image-uploader/run.bat
