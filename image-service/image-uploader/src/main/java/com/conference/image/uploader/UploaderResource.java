@@ -20,9 +20,18 @@ public class UploaderResource {
     public Response uploadFile(
         @FormDataParam("file") InputStream uploadedInputStream,
         @FormDataParam("file") FormDataContentDisposition fileDetail) {
+        
         String uploadedFileLocation = "d://uploaded/" + fileDetail.getFileName();
         String output = "File uploaded to : " + uploadedFileLocation;
         return Response.status(200).entity(output).build();
     }
+    
+    
+    @POST
+    @Path("/check")
+    public Response checkStatus() {
+        return Response.status(200).entity("Status").build();
+    }
+    
     
 }
