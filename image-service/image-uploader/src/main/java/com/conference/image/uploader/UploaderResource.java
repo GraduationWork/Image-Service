@@ -26,4 +26,12 @@ public class UploaderResource {
         return Response.status(200).entity(output).build();
     }
     
+    
+    @POST
+    @Path("/check")
+    public Response checkStatus() {
+        return Response.status(200).entity("Status").build();
+    }
+    
+    
 }
