@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ImageService {
 
-    private static final String FILE_PATH = "c:\\mkyong-logo.png";
+    private static final String FILE_PATH = "d:\\FIFA.png";
 
     @GET
     @Path("/get")
