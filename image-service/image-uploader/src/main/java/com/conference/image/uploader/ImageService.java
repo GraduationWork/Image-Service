@@ -8,10 +8,13 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.ResponseBuilder;
 
+import org.springframework.stereotype.Component;
+
 @Path("/image")
+@Component
 public class ImageService {
 
-    private static final String FILE_PATH = "c:\\mkyong-logo.png";
+    private static final String FILE_PATH = "d:\\FIFA.png";
 
     @GET
     @Path("/get")
