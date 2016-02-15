@@ -8,6 +8,7 @@
 
 	<modules>
 		<module>image-uploader</module>
+		<module>image-provider</module>
 	</modules>
 
 	<properties>
