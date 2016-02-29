@@ -43,7 +43,7 @@ public class UploaderResource {
 
     @POST
     @Path("/api/upload")
-    @Consumes("multipart/form-data")
+    @Consumes(MediaType.MULTIPART_FORM_DATA)
     public Response uploadFile(MultipartFormDataInput input) {
 
         String fileName = "";
