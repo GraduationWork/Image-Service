@@ -160,7 +160,7 @@
 					</webApp>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<stopKey>STOP</stopKey>
-					<stopPort>8005</stopPort>
+					<stopPort>8006</stopPort>
 					<port>${jetty.port}</port>
 				</configuration>
 			</plugin>

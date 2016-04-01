@@ -33,8 +33,10 @@ public class UploaderResource {
     @Consumes(MediaType.MULTIPART_FORM_DATA)
     public Response uploadFile(
             @FormDataParam("file") InputStream uploadedInputStream,
-            @FormDataParam("file") FormDataContentDisposition fileDetail) {
-
+            @FormDataParam("file") FormDataContentDisposition fileDetail) throws IOException {
+    	File file = new File("/uploadedfiles/image.png");
+    	FileOutputStream out = new FileOutputStream(file);
+    	IOUtils.copy(uploadedInputStream, out);
         String uploadedFileLocation = "d://uploaded/"
                 + fileDetail.getFileName();
         String output = "File uploaded to : " + uploadedFileLocation;
