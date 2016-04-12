@@ -18,12 +18,14 @@ import javax.ws.rs.core.Response;
 import org.apache.commons.io.IOUtils;
 import org.jboss.resteasy.plugins.providers.multipart.InputPart;
 import org.jboss.resteasy.plugins.providers.multipart.MultipartFormDataInput;
+import org.springframework.stereotype.Component;
 
 import com.sun.jersey.api.view.Viewable;
 import com.sun.jersey.core.header.FormDataContentDisposition;
 import com.sun.jersey.multipart.FormDataParam;
 
 @Path("/")
+@Component
 public class UploaderResource {
 
     private final String UPLOADED_FILE_PATH = "d:\\uploaded";
